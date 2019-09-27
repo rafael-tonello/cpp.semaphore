@@ -2,8 +2,14 @@
 #define _SEMAPHORE_
 #include <queue>
 #include <mutex>
+
 /* A sempahore class that allows to send messages to waiters. A middle ground
- * between a commmon Semaphore and a channel system */
+ * between a commmon Semaphore and a channel system
+ by Rafael Tonello (tonello.rafinha@gmail.com)
+
+
+
+ */
 namespace Shared{
     class Semaphore{
         private:
