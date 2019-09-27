@@ -44,7 +44,7 @@ namespace Shared{
             void *get(){ return wait(); }
             void *receive(){ return wait(); }
 
-            //release one waiter. You can pass a message for the next waiter.
+            //release one waiting. You can pass a message for the next waiter.
             void release(void *messageToNext = NULL)
             {
                 counterMutex.lock();
